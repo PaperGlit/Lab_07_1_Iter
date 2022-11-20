@@ -52,8 +52,6 @@ void Sort(int** a, const int rowCount, const int colCount)
 
 void Calc(int** a, const int rowCount, const int colCount, int& S, int& k)
 {
-	S = 0;
-	k = 0;
 	for (int i = 0; i < rowCount; i++)
 		for (int j = 0; j < colCount; j++)
 			if (a[i][j] % 2 == 0 && i + j % 8 != 0)
