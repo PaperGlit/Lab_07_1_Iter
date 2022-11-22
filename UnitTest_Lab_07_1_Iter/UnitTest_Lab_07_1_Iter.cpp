@@ -32,8 +32,6 @@ void TestSort(int** a, const int rowCount, const int colCount)
 
 void TestCalc(int** a, const int rowCount, const int colCount, int& S, int& k)
 {
-	S = 0;
-	k = 0;
 	for (int i = 0; i < rowCount; i++)
 		for (int j = 0; j < colCount; j++)
 			if (a[i][j] % 2 == 0 && i + j % 8 != 0)
@@ -66,14 +64,11 @@ namespace UnitTestLab071Iter
 			Sort(b, rowCount, colCount);
 			for (int i = 0; i < rowCount; i++)
 				for (int j = 0; j < colCount; j++)
-				{
 					Assert::AreEqual(a[i][j], b[i][j]);
-				}
 			TestCalc(a, rowCount, colCount, w, x);
 			Calc(b, rowCount, colCount, y, z);
 			Assert::AreEqual(w, y);
 			Assert::AreEqual(x, z);
-					
 		}
 	};
 }

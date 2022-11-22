@@ -4,8 +4,7 @@
 
 using namespace std;
 
-void Create(int** a, const int rowCount, const int colCount, const int Low,
-	const int High)
+void Create(int** a, const int rowCount, const int colCount, const int Low, const int High)
 {
 	for (int i = 0; i < rowCount; i++)
 		for (int j = 0; j < colCount; j++)
